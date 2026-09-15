@@ -1,0 +1,15 @@
+:root { font-family: Arial, sans-serif; color: #172033; background: #f4f6f9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.hero { background: #14213d; color: white; padding: 48px 24px; }
+.hero h1 { margin: 10px 0; }
+.container { width: min(1100px, 92%); margin: 32px auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.card, .unit { background: white; border-radius: 12px; padding: 18px; box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+.reservation-card { margin-top: 28px; max-width: 700px; }
+.badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #ffffff22; font-size: 12px; font-weight: 700; }
+.muted { color: #5d6778; }
+label { display: block; margin-top: 14px; font-weight: 600; }
+input, select, button { width: 100%; margin-top: 6px; padding: 11px; border-radius: 8px; border: 1px solid #cbd2dc; }
+button { margin-top: 20px; background: #14213d; color: white; border: 0; cursor: pointer; }
+.result { margin-top: 16px; padding: 12px; border-radius: 8px; background: #eef3ff; }

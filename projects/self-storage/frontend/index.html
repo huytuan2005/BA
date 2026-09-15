@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Self-Storage MVP</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Self-Storage MVP</h1>
+    <section>
+      <h2>1. Facilities</h2>
+      <select id="facility"></select>
+    </section>
+    <section>
+      <h2>2. Available Units</h2>
+      <select id="unit"></select>
+      <div id="unitInfo"></div>
+    </section>
+    <section>
+      <h2>3. Reservation</h2>
+      <label>Start date <input id="startDate" type="date"></label>
+      <label>Rental period (months) <input id="months" type="number" min="1" value="1"></label>
+      <button id="reserve">Submit reservation</button>
+    </section>
+    <section id="result" class="result"></section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

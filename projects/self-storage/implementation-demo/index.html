@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Storage Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <span class="badge">NON-PRODUCTION DEMO</span>
+      <h1>Self-Storage Facility</h1>
+      <p>Framework validation demo for facility/unit discovery and reservation inputs.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Facilities & Units</h2>
+      <div id="unit-list" class="grid"></div>
+    </section>
+
+    <section class="card reservation-card">
+      <h2>Reservation Prototype</h2>
+      <p class="muted">Source-supported inputs only: facility, unit type, start date, rental period.</p>
+      <form id="reservation-form">
+        <label>Facility
+          <select id="facility" required></select>
+        </label>
+        <label>Unit type
+          <select id="unitType" required></select>
+        </label>
+        <label>Start date
+          <input id="startDate" type="date" required />
+        </label>
+        <label>Rental period
+          <input id="rentalPeriod" type="text" placeholder="e.g. 3 months" required />
+        </label>
+        <button type="submit">Submit Demo Reservation</button>
+      </form>
+      <div id="result" class="result" hidden></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

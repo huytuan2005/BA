@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; }
+section { border: 1px solid #ddd; padding: 20px; margin-bottom: 16px; border-radius: 10px; }
+label, select, input, button { display: block; margin-top: 10px; width: 100%; box-sizing: border-box; padding: 10px; }
+button { cursor: pointer; }
+.result { min-height: 24px; }

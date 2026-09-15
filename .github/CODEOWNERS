@@ -1,0 +1,19 @@
+# Governance ownership for lifecycle artifacts.
+# Replace these team names with real GitHub users/teams in the target repository.
+
+/.github/                         @project-admins
+/scripts/                         @ba-governance
+/.codex/                          @ba-governance
+
+/projects/*/requirements/         @ba-team
+/projects/*/process-analysis/     @ba-team
+/projects/*/functional-analysis/ @ba-team
+/projects/*/traceability/         @ba-team
+/projects/*/blueprint/            @ba-team
+/projects/*/implementation-readiness/ @pm-po-team
+/projects/*/implementation/       @dev-team
+/projects/*/implementation-plan/  @dev-team
+/projects/*/implementation-validator/ @tech-lead-team
+/projects/*/implementation-executor/  @dev-team
+/projects/*/implementation-verification/ @qa-team
+/projects/*/implementation-closure/ @pm-po-team
