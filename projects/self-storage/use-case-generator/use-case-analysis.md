@@ -1,8 +1,12 @@
 # Self-Storage — Use Case Analysis
 
-**Run:** E2E-SELF-STORAGE-001  
-**Input:** functional-analysis + discovered requirements  
-**Status:** `PASS WITH QUESTIONS`
+**Phase 3 Run ID:** `SS-P3-E2E-001`
+**Lifecycle Stage:** `Use Case Analysis`
+**Current Status:** `CURRENT — PHASE 3 BA BASELINE / PENDING REVIEW`
+**Evidence Source:** `discovered-requirements.md` + `process-analysis/process-analysis.md` + `functional-analysis/functional-analysis.md`
+**Traceability References:** FR-SELF-STORAGE-001..027 → UC-SELF-STORAGE-001..027
+**Historical Run Basis:** `E2E-SELF-STORAGE-001`
+
 
 ## 1. Project Context
 - Use cases are derived only from source-supported actor capabilities.

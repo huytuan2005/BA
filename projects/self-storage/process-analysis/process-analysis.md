@@ -1,8 +1,12 @@
 # Self-Storage — Process Analysis
 
-**Run:** E2E-SELF-STORAGE-001  
-**Source:** `discovered-requirements.md`  
-**Status:** `PASS WITH QUESTIONS`
+**Phase 3 Run ID:** `SS-P3-E2E-001`
+**Lifecycle Stage:** `Process Analysis`
+**Current Status:** `CURRENT — PHASE 3 BA BASELINE / PENDING REVIEW`
+**Evidence Source:** `discovered-requirements.md`, FR-SELF-STORAGE-001..027, BR-SELF-STORAGE-001..004
+**Traceability References:** `discovered-requirements.md` → FR-SELF-STORAGE-001..027; BR-SELF-STORAGE-001..004
+**Historical Run Basis:** `E2E-SELF-STORAGE-001`
+
 
 ## 1. Project Context
 - Self-Storage Facility Rental and Management System.
