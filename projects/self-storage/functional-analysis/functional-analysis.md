@@ -92,5 +92,3 @@ All FR-SELF-STORAGE-001 through FR-SELF-STORAGE-027 are represented.
 ## 10. Quality Gate
 
 `PASS WITH QUESTIONS`
-
-TODO: intentional governance failure test
