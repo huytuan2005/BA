@@ -1,0 +1,50 @@
+{
+  "required_files": [
+    "discovered-requirements.md",
+    "context.md",
+    "process-analysis/process-analysis.md",
+    "functional-analysis/functional-analysis.md",
+    "use-case-generator/use-case-analysis.md",
+    "traceability/traceability-result.md",
+    "blueprint/system-blueprint.md",
+    "implementation-readiness/implementation-readiness-r2.md",
+    "implementation/implementation-r2.md",
+    "implementation-plan/implementation-plan-r2.md",
+    "implementation-validator/implementation-plan-validation-r2.md",
+    "implementation-traceability/implementation-traceability-matrix.md",
+    "implementation-executor/execution-record-r2.md",
+    "implementation-verification/verification-result-r2.md",
+    "implementation-closure/closure-result-r2.md",
+    "implementation-test/api-smoke-test.js",
+    "implementation-test/runtime-test-result.md",
+    "backend/server.js",
+    "backend/database.js",
+    "frontend/index.html",
+    "frontend/app.js",
+    "frontend/styles.css"
+  ],
+  "allow_placeholders_in": [],
+  "tests": [
+    {
+      "name": "implementation traceability checker regression",
+      "command": [
+        "python",
+        "scripts/tests/test_implementation_traceability_check.py"
+      ]
+    },
+    {
+      "name": "project governance regression tests",
+      "command": [
+        "python",
+        "scripts/tests/test_governance_quality_gate.py"
+      ]
+    },
+    {
+      "name": "MVP API edge-case test",
+      "command": [
+        "node",
+        "projects/self-storage/implementation-test/api-edge-test.js"
+      ]
+    }
+  ]
+}

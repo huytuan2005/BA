@@ -18,5 +18,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run implementation traceability checks
-        run: python scripts/run_all_traceability.py
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run BA governance quality gate (composite)
+        run: python scripts/run_governance_quality_gate.py
