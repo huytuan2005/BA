@@ -1,7 +1,7 @@
 # Branch Protection Checklist
 
 Configure this in the repository host before treating the framework as production governance.
-----
+
 ## `main`
 
 - [ ] Require a pull request before merging.

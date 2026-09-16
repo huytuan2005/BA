@@ -40,4 +40,3 @@ Do not add any explicit API/interface specification.
 - No fabricated security contract.
 - Focused open questions identify whether and how an API is actually required.
 - Quality Gate: `PASS WITH QUESTIONS`.
------------

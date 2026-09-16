@@ -42,3 +42,25 @@ Branch protection, required reviewers, CODEOWNERS enforcement, and reviewer sepa
 ### Separation of duties
 
 Use BA → PM/PO → Developer → QA → PM/PO/Client as the default control path. The person who writes implementation should not be the sole verifier.
+
+## Governance Phase 2 — Automated Quality Gate
+
+The GitHub Actions `BA Governance` workflow now runs a composite quality gate while preserving the existing required status-check name `Implementation Traceability`.
+
+The gate checks repository governance files, implementation traceability for governed projects, required project artifacts, duplicate ID declarations, unresolved TODO/TBD/FIXME markers, and project regression tests. The Self-Storage project also runs an API edge-case suite.
+
+Run locally:
+
+```powershell
+python scripts/run_governance_quality_gate.py
+```
+
+Then push a branch and open a Pull Request. The same check must pass before the PR can merge under the active repository ruleset.
+
+### Interpretation of results
+
+`PASS` means the automated integrity checks passed.
+
+`FAIL` means the PR should be corrected or explicitly reviewed; the script does not invent business decisions.
+
+A project may still contain legitimate `OPEN`, `UNKNOWN`, or `BLOCKED` business states. Those are not automatically treated as CI failures.
