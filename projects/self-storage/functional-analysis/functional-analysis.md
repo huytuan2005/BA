@@ -1,8 +1,12 @@
 # Self-Storage — Functional Analysis
 
-**Run:** E2E-SELF-STORAGE-001  
-**Input:** `discovered-requirements.md` + process-analysis baseline  
-**Status:** `PASS WITH QUESTIONS`
+**Phase 3 Run ID:** `SS-P3-E2E-001`
+**Lifecycle Stage:** `Functional Analysis`
+**Current Status:** `CURRENT — PHASE 3 BA BASELINE / PENDING REVIEW`
+**Evidence Source:** `discovered-requirements.md` + `process-analysis/process-analysis.md`
+**Traceability References:** FR-SELF-STORAGE-001..027 → FN-SELF-STORAGE-001..027
+**Historical Run Basis:** `E2E-SELF-STORAGE-001`
+
 
 ## 1. Project Context
 - Functional baseline derived from FR-SELF-STORAGE-001 through FR-SELF-STORAGE-027.

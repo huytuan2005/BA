@@ -1,8 +1,13 @@
 # Self-Storage — System Blueprint
 
-**Run:** E2E-SELF-STORAGE-001  
-**Traceability:** `PASSED`  
-**Status:** `APPROVED AS ANALYSIS BLUEPRINT`
+**Phase 3 Run ID:** `SS-P3-E2E-001`
+**Lifecycle Stage:** `Blueprint`
+**Current Status:** `CURRENT — PHASE 3 BA BASELINE / PENDING REVIEW`
+**Historical Status:** `APPROVED AS ANALYSIS BLUEPRINT` (prior validation run; not a Phase 3 human approval claim)
+**Evidence Source:** `discovered-requirements.md`, process analysis, functional analysis, use-case analysis, and `traceability/traceability-result.md`
+**Traceability References:** FR-SELF-STORAGE-001..027; BR-SELF-STORAGE-001..004; UC-SELF-STORAGE-001..027
+**Historical Run Basis:** `E2E-SELF-STORAGE-001`
+
 
 ## 1. System Overview
 Self-Storage Facility Rental and Management System supporting storage customers, facility staff, facility managers, business operations managers, and system administrators.
