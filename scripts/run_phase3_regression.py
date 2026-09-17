@@ -1,6 +1,6 @@
 from pathlib import Path
 import subprocess,re,sys
-root=Path('/mnt/data/BA2_clean'); out=[]
+root=Path(__file__).resolve().parents[1]; out=[]
 def ck(name,cond): out.append((name,bool(cond)))
 # Skills 9-17: definition, version, locked = 27
 skills=[('9','traceability','SKILL.md'),('10','blueprint-generator','SKILL.md'),('11','implementation-readiness','SKILL.md'),('12','implementation','implementation-SKILL-v1.0.md'),('13','implementation-plan','SKILL.md'),('14','implementation-validator','SKILL.md'),('15','implementation-executor','SKILL.md'),('16','implementation-verification','SKILL.md'),('17','implementation-closure','SKILL.md')]
