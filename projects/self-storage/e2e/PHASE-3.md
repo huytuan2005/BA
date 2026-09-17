@@ -1,49 +1,59 @@
 # Self-Storage — Phase 3 E2E Validation
 
-**Run ID:** `SS-P3-E2E-001`  
-**Status:** `IN PROGRESS`  
-**Current Gate:** `BA BASELINE`  
-**Governance:** Git PR + CI + Human Review  
+**Run ID:** `SS-P3-E2E-001`
+**Status:** `COMPLETE`
+**Governance:** Git PR + CI + Human Review
 
 ## Objective
 
 Run the Self-Storage project through the real BA → Dev → Verification → Closure lifecycle using the repository governance controls established in Phase 1 and the automated quality gate established in Phase 2.
 
-This run record is evidence of the Phase 3 validation process. It does not itself approve requirements, implementation, verification, or closure.
+This record summarizes the lifecycle evidence. It does not itself approve requirements or replace the governing artifacts.
 
-## BA Baseline Scope
+## Phase 3 Lifecycle Status
 
-The current Phase 3 BA baseline contains:
+| Stage | Evidence | Status |
+|---|---|---|
+| E2E initialization | `e2e/PHASE-3.md` | COMPLETE |
+| Fresh BA baseline | `e2e/BA-baseline-index.md` + BA artifacts | COMPLETE |
+| Implementation readiness | `implementation-readiness/implementation-readiness.md` | COMPLETE |
+| Approved implementation scope | `implementation/implementation-scope.md` | COMPLETE |
+| Implementation plan | `implementation-plan/implementation-plan.md` | COMPLETE |
+| Plan validation | `implementation-validator/implementation-plan-validation.md` | COMPLETE |
+| Execution | `implementation-executor/execution-record-phase3.md` | COMPLETE / NO_ACTION for already-completed demo items |
+| Verification | `implementation-verification/verification-record-phase3.md` | COMPLETE / PASS_WITH_GAPS |
+| Closure | `closure/closure-record-phase3.md` | COMPLETE / CLOSED_WITH_GAPS |
+| Full framework regression | `projects/regression/phase3-regression.md` | COMPLETE / PASS |
 
-| Artifact | Path | Current status | Evidence source | Traceability |
-|---|---|---|---|---|
-| Process Analysis | `process-analysis/process-analysis.md` | PENDING REVIEW | `discovered-requirements.md` + FR/BR | FR-SELF-STORAGE-001..027; BR-SELF-STORAGE-001..004 |
-| Functional Analysis | `functional-analysis/functional-analysis.md` | PENDING REVIEW | requirements + process analysis | FR-SELF-STORAGE-001..027 → FN-SELF-STORAGE-001..027 |
-| Use Case Analysis | `use-case-generator/use-case-analysis.md` | PENDING REVIEW | requirements + process + functional analysis | FR-SELF-STORAGE-001..027 → UC-SELF-STORAGE-001..027 |
-| Blueprint | `blueprint/system-blueprint.md` | PENDING REVIEW | requirements + BA artifacts + traceability | FR/BR/UC references above |
+## Approved Demo Scope
 
-## Phase 3 Lifecycle
+The fresh Phase 3 implementation scope is limited to:
 
-- [x] E2E run initialized
-- [ ] Fresh BA baseline reviewed
-- [ ] Traceability reviewed
-- [ ] Blueprint reviewed
-- [ ] Implementation Readiness decided by human reviewer
-- [ ] Approved implementation scope identified
-- [ ] Implementation plan validated
-- [ ] Real implementation executed
-- [ ] Implementation verified independently
-- [ ] Implementation closure decided
+- `IMP-SS-DEMO-001` — Facility and unit discovery prototype.
+- `IMP-SS-DEMO-002` — Reservation-form prototype using facility, unit type, start date, and rental period.
 
-## Governance Evidence
+Associated plan items:
 
-- Initialization PR: `PR 3.1`
-- BA baseline PR: `PENDING`
-- CI checks: `PENDING`
-- Human reviewer: `PENDING`
-- Readiness decision: `PENDING`
-- Verification record: `PENDING`
-- Closure record: `PENDING`
+- `IP-SS-DEMO-001`
+- `IP-SS-DEMO-002`
+
+## Verification Boundary
+
+The current implementation verification records the approved demo scope as verified with `PASS_WITH_GAPS` overall because production remains outside the verified scope.
+
+## Closure Boundary
+
+The current closure record records the approved demo scope as `CLOSED_WITH_GAPS` overall because production remains blocked and is not closed.
+
+## Production Boundary
+
+Production implementation remains:
+
+```text
+BLOCKED
+```
+
+Production is not treated as implemented, verified, or closed by this Phase 3 run.
 
 ## Open / Unknown Boundaries Preserved
 
@@ -57,6 +67,23 @@ The following remain open unless new approved evidence changes them:
 - detailed operations behind ambiguous `manage`, `monitor`, `support`, and `handle` capabilities;
 - production API and database decisions not established by approved evidence or development standards.
 
-## Phase 3 Result
+## Regression Result
 
-`IN PROGRESS — BA BASELINE PENDING HUMAN REVIEW`
+The Phase 3 full regression was executed as a repository-level contract audit using the checks documented in `projects/regression/phase3-regression.md`.
+
+Actual result:
+
+```text
+PASS
+```
+
+The executable checks included the existing governance quality gate, implementation traceability checker, repository regression tests, current lifecycle artifact consistency checks, historical-artifact preservation checks, and production-boundary checks.
+
+## Final Result
+
+```text
+E2E LIFECYCLE: COMPLETE
+DEMO SCOPE: CLOSED_WITH_GAPS
+PRODUCTION SCOPE: BLOCKED
+FULL FRAMEWORK REGRESSION: PASS
+```
