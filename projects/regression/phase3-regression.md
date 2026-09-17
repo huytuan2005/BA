@@ -19,11 +19,11 @@ The regression checks repository-level lifecycle contracts and does not invent, 
 
 # 2. Regression Method
 
-The repository now contains an executable Phase 3 regression runner:
+The repository contains an executable Phase 3 regression runner:
 
-```text
+````text
 scripts/run_phase3_regression.py
-
+````
 # 3. Actual Regression Result
 
 The Phase 3 regression runner was executed after the current Phase 3 artifacts were reconciled.
@@ -33,7 +33,7 @@ Actual result:
 ```text
 81 / 81 PASS
 0 FAIL
-```
+````
 
 Independent executable checks:
 
@@ -45,21 +45,28 @@ Governance Quality-Gate Regression Tests: PASS
 Self-Storage API Edge-Case Test: PASS
 ```
 
----
+Git Merge-Chain Boundary
+
+The Phase 3 regression runner validates the core Phase 3 lifecycle merge chain:
+
+````text
+
+PR #4 → PR #12
+````
 
 # 4. Locked Skill Baseline
 
-| Skill | Definition | Version | Status |
-|---|---|---|---|
-| Skill 9 | `traceability/SKILL.md` | `1.0` | `LOCKED` |
-| Skill 10 | `blueprint-generator/SKILL.md` | `1.0` | `LOCKED` |
-| Skill 11 | `implementation-readiness/SKILL.md` | `1.0` | `LOCKED` |
-| Skill 12 | `implementation/implementation-SKILL-v1.0.md` | `v1.0` | `LOCKED` |
-| Skill 13 | `implementation-plan/SKILL.md` | `v1.0` | `LOCKED` |
-| Skill 14 | `implementation-validator/SKILL.md` | `v1.0` | `LOCKED` |
-| Skill 15 | `implementation-executor/SKILL.md` | `v1.0` | `LOCKED` |
-| Skill 16 | `implementation-verification/SKILL.md` | `v1.0` | `LOCKED` |
-| Skill 17 | `implementation-closure/SKILL.md` | `v1.0` | `LOCKED` |
+| Skill    | Definition                                    | Version | Status   |
+| -------- | --------------------------------------------- | ------- | -------- |
+| Skill 9  | `traceability/SKILL.md`                       | `1.0`   | `LOCKED` |
+| Skill 10 | `blueprint-generator/SKILL.md`                | `1.0`   | `LOCKED` |
+| Skill 11 | `implementation-readiness/SKILL.md`           | `1.0`   | `LOCKED` |
+| Skill 12 | `implementation/implementation-SKILL-v1.0.md` | `v1.0`  | `LOCKED` |
+| Skill 13 | `implementation-plan/SKILL.md`                | `v1.0`  | `LOCKED` |
+| Skill 14 | `implementation-validator/SKILL.md`           | `v1.0`  | `LOCKED` |
+| Skill 15 | `implementation-executor/SKILL.md`            | `v1.0`  | `LOCKED` |
+| Skill 16 | `implementation-verification/SKILL.md`        | `v1.0`  | `LOCKED` |
+| Skill 17 | `implementation-closure/SKILL.md`             | `v1.0`  | `LOCKED` |
 
 Actual result:
 
@@ -71,16 +78,16 @@ Actual result:
 
 # 5. Cross-Skill Lifecycle Result
 
-| Contract | Actual Result |
-|---|---|
-| Skill 9 → Skill 10 traceability boundary | PASS |
-| Skill 10 → Skill 11 readiness boundary | PASS |
-| Skill 11 → Skill 12 implementation boundary | PASS |
-| Skill 12 → Skill 13 planning boundary | PASS |
-| Skill 13 → Skill 14 validation boundary | PASS |
-| Skill 14 → Skill 15 execution boundary | PASS |
-| Skill 15 → Skill 16 verification boundary | PASS |
-| Skill 16 → Skill 17 closure boundary | PASS |
+| Contract                                    | Actual Result |
+| ------------------------------------------- | ------------- |
+| Skill 9 → Skill 10 traceability boundary    | PASS          |
+| Skill 10 → Skill 11 readiness boundary      | PASS          |
+| Skill 11 → Skill 12 implementation boundary | PASS          |
+| Skill 12 → Skill 13 planning boundary       | PASS          |
+| Skill 13 → Skill 14 validation boundary     | PASS          |
+| Skill 14 → Skill 15 execution boundary      | PASS          |
+| Skill 15 → Skill 16 verification boundary   | PASS          |
+| Skill 16 → Skill 17 closure boundary        | PASS          |
 
 Actual:
 
@@ -284,7 +291,7 @@ No unsupported production scope is accepted by this regression.
 # 11. Final Regression Gate
 
 ```text
-78 / 78 repository contract assertions: PASS
+81 / 81 repository contract assertions: PASS
 
 Cross-skill lifecycle contracts:
 8 / 8 PASS
