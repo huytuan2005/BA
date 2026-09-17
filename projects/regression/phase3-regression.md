@@ -23,32 +23,6 @@ The repository now contains an executable Phase 3 regression runner:
 
 ```text
 scripts/run_phase3_regression.py
-```
-
-It executes **78 repository contract assertions** covering:
-
-- Skills 9–17 definition, version, and lock-state consistency;
-- required Phase 3 artifact presence;
-- Phase 3 master-status consistency;
-- implementation, plan, validation, execution, verification, and closure state consistency;
-- traceability and production-boundary consistency;
-- preservation of historical R2 artifacts;
-- Phase 1/2 baseline evidence;
-- Phase 3 Git merge-chain evidence.
-
-The regression also runs these existing executable checks independently:
-
-```text
-python3 scripts/run_governance_quality_gate.py
-python3 scripts/implementation_traceability_check.py
-python3 scripts/tests/test_implementation_traceability_check.py
-python3 scripts/tests/test_governance_quality_gate.py
-node projects/self-storage/implementation-test/api-edge-test.js
-```
-
-The Skill-specific Markdown test suites remain specification artifacts; they are not claimed as runtime-executed tests unless an executable runner exists for them.
-
----
 
 # 3. Actual Regression Result
 
@@ -57,7 +31,7 @@ The Phase 3 regression runner was executed after the current Phase 3 artifacts w
 Actual result:
 
 ```text
-78 / 78 PASS
+81 / 81 PASS
 0 FAIL
 ```
 
